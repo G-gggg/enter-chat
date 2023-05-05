@@ -1,0 +1,16 @@
+body {
+  width: 1200px;
+  height: 680px;
+  //   border: 1px solid red;
+  margin: 20px auto;
+  .container {
+    width: 600px;
+    height: 400px;
+    outline: 1px solid red;
+    border-radius: 6px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}

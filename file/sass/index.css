@@ -1,0 +1,289 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+
+.main {
+  height: 700px;
+  width: 1000px;
+  margin: 10px auto;
+  box-shadow: 0 0 3px 5px #e1e1e1;
+}
+.main .top {
+  width: 1000px;
+  height: 60px;
+  background-color: lightpink;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.main .top .top-left {
+  height: 100%;
+  width: 260px;
+  float: left;
+  position: relative;
+}
+.main .top .top-left .header {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-image: url("../img/head.png");
+  background-size: 48px;
+  line-height: 60px;
+  display: inline-block;
+  margin: 6px 10px;
+  border: 1px solid transparent;
+}
+.main .top .top-left .header:hover {
+  border: 1px solid white;
+}
+.main .top .top-left .search {
+  float: right;
+  margin-right: 60px;
+}
+.main .top .top-left .search h1 {
+  font-size: 20px;
+}
+.main .top .top-left .search div p {
+  font-size: 10px;
+}
+.main .top .top-type {
+  height: 100%;
+  width: 200px;
+  float: left;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.main .top .top-type a.icon-site {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-size: 26px;
+  background-position: center;
+  margin: 10px 11px;
+}
+.main .top .top-type .news {
+  background: url("../img/addfriend.png") no-repeat;
+}
+.main .top .top-type .news:hover {
+  background-color: #ccc;
+}
+.main .top .top-type .friend {
+  background: url("../img/friend.png") no-repeat;
+}
+.main .top .top-type .friend:hover {
+  background-color: #ccc;
+}
+.main .top .top-type .file {
+  background: url("../img/myapply.png") no-repeat;
+}
+.main .top .top-type .file:hover {
+  background-color: #ccc;
+}
+.main .top .top-type .black {
+  background: url("../img/black.png") no-repeat;
+}
+.main .top .top-type .black:hover {
+  background-color: #ccc;
+}
+.main .top .top-right {
+  height: 100%;
+  width: 156px;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.main .top .top-right .ic-same {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: 20px;
+  margin-left: 18px;
+}
+.main .top .top-right .ic-menu {
+  background-image: url("../img/menu1.png");
+}
+.main .top .top-right .ic-menu:hover {
+  background-color: #ccc;
+}
+.main .top .top-right .ic-shrink {
+  background-image: url("../img/small1.png");
+}
+.main .top .top-right .ic-shrink:hover {
+  background-color: #ccc;
+}
+.main .top .top-right .ic-boost {
+  background-image: url("../img/big.png");
+}
+.main .top .top-right .ic-boost:hover {
+  background-color: #ccc;
+}
+.main .top .top-right .ic-close {
+  background-image: url("../img/close.png");
+}
+.main .top .top-right .ic-close:hover {
+  background-color: #ccc;
+}
+.main .box {
+  width: 100%;
+  height: 650px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main .box .chat-list {
+  float: left;
+  width: 250px;
+  height: 640px;
+  background-color: rgb(249, 226, 226);
+}
+.main .box .chat-list .list-box {
+  height: 80px;
+  width: 250px;
+}
+.main .box .chat-list .list-box:hover {
+  background-color: #339850;
+}
+.main .box .chat-list .list-box .chat-head {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 15px 10px;
+}
+.main .box .chat-list .list-box .chat-rig {
+  float: right;
+  height: 50px;
+  width: 178px;
+  margin: 15px 0;
+}
+.main .box .chat-list .list-box .chat-rig .title {
+  font-weight: 600;
+  font-size: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main .box .chat-list .list-box .chat-rig .text {
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #6c6c6c;
+  padding-top: 4px;
+}
+.main .box .chat-list .select {
+  background-color: #ef817f;
+}
+.main .box .box-right {
+  float: left;
+  width: 750px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+}
+.main .box .box-right .recvfrom {
+  width: 750px;
+  height: 520px;
+}
+.main .box .box-right .recvfrom .nav-top {
+  height: 45px;
+  width: 100%;
+}
+.main .box .box-right .recvfrom .nav-top p {
+  line-height: 45px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 25px;
+}
+.main .box .box-right .recvfrom .news-top {
+  height: 475px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow-y: none;
+  background: url("../img/log.png") no-repeat rgba(243, 166, 167, 0.2);
+  background-size: 255px;
+  background-position: center;
+}
+.main .box .box-right .recvfrom .news-top ul {
+  height: 465px;
+  width: 100%;
+}
+.main .box .box-right .recvfrom .news-top ul li {
+  margin: 10px;
+  min-height: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.main .box .box-right .recvfrom .news-top ul li .avatar img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.main .box .box-right .recvfrom .news-top ul li .msg {
+  top: -10px;
+  margin: 8px;
+  min-height: 80px;
+}
+.main .box .box-right .recvfrom .news-top ul li .msg .msg-text {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 8px;
+}
+.main .box .box-right .recvfrom .news-top ul li .msg time {
+  float: right;
+  color: #ccc;
+}
+.main .box .box-right .recvfrom .news-top ul li::after {
+  clear: both;
+  content: "";
+  display: inline-block;
+}
+.main .box .box-right .recvfrom .news-top ul .other .avatar {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main .box .box-right .recvfrom .news-top ul .other .msg {
+  position: absolute;
+  left: 40px;
+}
+.main .box .box-right .recvfrom .news-top ul .self .avatar {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main .box .box-right .recvfrom .news-top ul .self .msg {
+  position: absolute;
+  right: 38px;
+}
+.main .box .box-right .recvfrom .news-top ul .self p {
+  display: flex;
+  justify-content: right;
+}
+.main .box .box-right .sendto {
+  width: 750px;
+  height: 118px;
+  position: relative;
+  border: 1px solid #fff;
+}
+.main .box .box-right .sendto .but-text textarea {
+  border: none;
+  font-size: 22px;
+  resize: none;
+  width: 750px;
+  height: 118px;
+}
+.main .box .box-right .sendto .but-text .button {
+  float: right;
+  padding: 5px 25px;
+  background-color: #febee2;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+}/*# sourceMappingURL=index.css.map */

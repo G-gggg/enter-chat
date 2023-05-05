@@ -1,0 +1,15 @@
+body {
+  width: 1200px;
+  height: 680px;
+  margin: 20px auto;
+}
+body .container {
+  width: 600px;
+  height: 400px;
+  outline: 1px solid red;
+  border-radius: 6px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}/*# sourceMappingURL=好友请求.css.map */

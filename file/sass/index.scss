@@ -1,0 +1,353 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+
+.main {
+  height: 700px;
+  width: 1000px;
+  margin: 10px auto;
+  box-shadow: 0 0 3px 5px #e1e1e1;
+  // overflow: hidden;
+  .top {
+    width: 1000px;
+    height: 60px;
+    // background-color: #febee2;
+    background-color: lightpink;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    // 顶部左侧
+    .top-left {
+      height: 100%;
+      width: 260px;
+      float: left;
+      position: relative;
+
+      // 自己头像
+      .header {
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        background-image: url("../img/head.png");
+        background-size: 48px;
+        line-height: 60px;
+        display: inline-block;
+        margin: 6px 10px;
+        border: 1px solid transparent;
+        &:hover {
+          border: 1px solid white;
+        }
+      }
+
+      // 个性签名
+      .search {
+        float: right;
+        margin-right: 60px;
+        h1 {
+          font-size: 20px;
+        }
+        div {
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    // 顶部左侧工具栏
+    .top-type {
+      height: 100%;
+      width: 200px;
+      float: left;
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+      a.icon-site {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-size: 26px;
+        background-position: center;
+        margin: 10px 11px;
+      }
+      .news {
+        background: url("../img/addfriend.png") no-repeat;
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+
+      .friend {
+        background: url("../img/friend.png") no-repeat;
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+
+      .file {
+        background: url("../img/myapply.png") no-repeat;
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+      .black {
+        background: url("../img/black.png") no-repeat;
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+    }
+
+    // 顶部右侧工具栏
+    .top-right {
+      height: 100%;
+      width: 156px;
+      float: right;
+      display: flex;
+      align-items: center;
+      .ic-same {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-size: 20px;
+        margin-left: 18px;
+      }
+      .ic-menu {
+        background-image: url("../img/menu1.png");
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+      .ic-shrink {
+        background-image: url("../img/small1.png");
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+      .ic-boost {
+        background-image: url("../img/big.png");
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+      .ic-close {
+        background-image: url("../img/close.png");
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+
+  // 左侧消息列表盒子
+  .box {
+    width: 100%;
+    height: 650px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    // 左侧消息列表
+    .chat-list {
+      float: left;
+      width: 250px;
+      height: 640px;
+      background-color: rgb(249, 226, 226);
+      .list-box {
+        height: 80px;
+        width: 250px;
+
+        &:hover {
+          background-color: #339850;
+          // 改颜色
+        }
+
+        // 朋友头像
+        .chat-head {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          border: 1px solid #fff;
+          margin: 15px 10px;
+        }
+
+        // 朋友名字及发送的消息盒子
+        .chat-rig {
+          float: right;
+          height: 50px;
+          width: 178px;
+          margin: 15px 0;
+          // background-color: yellow;
+
+          // 朋友名字
+          .title {
+            font-weight: 600;
+            font-size: 17px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+
+          // 朋友发来的消息内容
+          .text {
+            font-size: 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #6c6c6c;
+            padding-top: 4px;
+          }
+        }
+      }
+
+      // 消息列表背景色
+      .select {
+        background-color: #ef817f;
+      }
+    }
+
+    // 聊天页面及发送内容盒子
+    .box-right {
+      float: left;
+      width: 750px;
+      height: 640px;
+      display: flex;
+      flex-direction: column;
+
+      // 聊天页面盒子
+      .recvfrom {
+        width: 750px;
+        height: 520px;
+        // background-color: yellow;
+
+        // 当前聊天好友名字
+        .nav-top {
+          height: 45px;
+          width: 100%;
+          p {
+            line-height: 45px;
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 25px;
+          }
+        }
+
+        // 聊天界面背景
+        .news-top {
+          height: 475px;
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+
+          overflow-y: none;
+          background: url("../img/log.png") no-repeat rgba(243, 166, 167, 0.2);
+          background-size: 255px;
+          background-position: center;
+          ul {
+            height: 465px;
+            width: 100%;
+
+            // 发送消息样式
+            li {
+              margin: 10px;
+              min-height: 80px;
+              position: relative;
+              overflow: hidden;
+              .avatar {
+                img {
+                  height: 30px;
+                  width: 30px;
+                  border-radius: 50%;
+                }
+              }
+
+              .msg {
+                top: -10px;
+                margin: 8px;
+                min-height: 80px;
+                .msg-text {
+                  background-color: #f4f4f4;
+                  border-radius: 5px;
+                  padding: 8px;
+                }
+                time {
+                  float: right;
+                  color: #ccc;
+                }
+              }
+              &::after {
+                clear: both;
+                content: "";
+                display: inline-block;
+              }
+            }
+            // 聊天界面，对方发送内容
+            .other {
+              .avatar {
+                position: absolute;
+                left: 0;
+                top: 0;
+              }
+
+              .msg {
+                position: absolute;
+                left: 40px;
+              }
+            }
+
+            // 聊天界面，自己发送内容
+            .self {
+              .avatar {
+                position: absolute;
+                right: 0;
+                top: 0;
+              }
+
+              .msg {
+                position: absolute;
+                right: 38px;
+              }
+              p {
+                display: flex;
+                justify-content: right;
+              }
+            }
+          }
+        }
+      }
+
+      // 发送内容盒子
+      .sendto {
+        width: 750px;
+        height: 118px;
+        position: relative;
+        border: 1px solid #fff;
+
+        .but-text {
+          // 发送消息内容文本框
+          textarea {
+            border: none;
+            font-size: 22px;
+            resize: none;
+            width: 750px;
+            height: 118px;
+          }
+          // 发送按键
+          .button {
+            float: right;
+            padding: 5px 25px;
+            background-color: #febee2;
+            border-radius: 5px;
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}
